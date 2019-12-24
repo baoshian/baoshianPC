@@ -29,7 +29,7 @@ public class ExampleCon {
     /**
      * 推送接口接口校验Get
      *
-     * @author bosen
+     * @author bosean
      * @since 2018年11月28日14:21:45
      */
     @ApiOperation("推送接口接口校验Get")
@@ -38,7 +38,7 @@ public class ExampleCon {
         BASE64Encoder encoder = new BASE64Encoder();
         //平台上定义的token
         String token = "123456";
-        //当前登录账号的用户名或公司主账号的用户名
+        //公司主账号用户名或个人账号用户名
         String username = "admin";
         token += username;
         String md5Format = DigestUtils.md5Hex(token);
@@ -53,7 +53,7 @@ public class ExampleCon {
     /**
      * 推送接口接收数据Post,若十次请求无响应,则本次推送结束
      *
-     * @author bosen
+     * @author bosean
      * @since 2018年11月28日14:21:45
      */
     @ApiOperation("推送接口接收数据Post")
